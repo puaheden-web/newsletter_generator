@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Newsletter Generator</h1>
+        <p>Paste the events HTML and generate a newsletter.</p>
+    </header>
+
+    <section class="input-panel">
+
+        <h2>Source HTML</h2>
+
+        <textarea
+            id="sourceHtml"
+            placeholder="Paste the entire view-content HTML here..."
+        ></textarea>
+
+        <button id="generateBtn">
+            Generate Newsletter
+        </button>
+
+    </section>
+
+    <section class="preview-panel">
+
+        <div class="preview-header">
+
+            <h2>Preview</h2>
+
+            <div>
+
+                <button id="copyBtn">
+                    Copy HTML
+                </button>
+
+                <button id="downloadBtn">
+                    Download HTML
+                </button>
+
+            </div>
+
+        </div>
+
+        <iframe id="previewFrame"></iframe>
+
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+
